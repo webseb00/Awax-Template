@@ -1,5 +1,10 @@
 .header {
     background: $color-black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
 
     &__wrapper {
         width: 100%;
@@ -99,11 +104,11 @@
     .nav {
         position: fixed;
         top: 0;
+        right: 0;
         left: 0;
         bottom: 0;
-        width: 50vw;
         z-index: 99;
-        background: $color-black;
+        background: rgba(0,0,0,.7);
         display: flex;
         align-items: center;
         transform: translateX(-100%);
@@ -125,7 +130,7 @@
 
         &__item {
             margin-left: 0;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             padding-bottom: 5px;
 
             &::after {
@@ -153,12 +158,10 @@
 ///// HOME /////
 
 .home {
-    background-image: url('../images/bg-1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: $color-black url('../images/bg-1.jpg') center/cover no-repeat fixed;
     height: 85vh;
     position: relative;
+    margin-top: 60px;
 
     &__wrapper {
         width: 100%;
