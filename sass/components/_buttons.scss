@@ -1,4 +1,5 @@
 .btn {
+    font-family: 'Montserrat', sans-serif;
     display: inline-block;
     text-decoration: none;
     outline: none;
@@ -39,5 +40,30 @@
         &:hover {
             color: $color-grey-dark-4;
         }
+    }
+}
+
+// SCROLL BTN STYLES:
+
+.scroll-btn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: $color-white;
+    background: $color-primary;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    opacity: .4;
+    transition: .4s;
+    font-size: 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.4);
+
+    &:hover {
+        opacity: 1;
     }
 }
