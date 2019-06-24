@@ -1,0 +1,21 @@
+// MEDIA QUERIES MIXINS:
+
+@mixin screen-xs {
+	@media (min-width: #{$screen-xs}) { @content; }
+}
+
+@mixin screen-sm {
+	@media (max-width: #{$screen-sm}) { @content; }
+}
+
+@mixin screen-md {
+	@media (max-width: #{$screen-md}) { @content; }
+}
+
+@mixin screen-bg {
+	@media (max-width: #{$screen-bg}) { @content; }
+}
+
+@mixin screen-xl {
+	@media (max-width: #{$screen-xl}) { @content; }
+}

@@ -1,0 +1,120 @@
+.footer {
+	padding: 30px 0 40px;
+	background: $color-black;
+	color: $color-grey-dark-2;
+
+	.footer-text {
+		line-height: 150%;
+		font-size: 13px;
+		text-align: justify;
+
+		@include screen-bg {
+			margin: 30px 0;
+		}
+	}
+
+	.subscribe {
+		height: 100%;
+		background: $color-grey-dark-4;
+		border-radius: 5px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		&__field {
+			position: relative;
+			border-bottom: 2px solid $color-grey-dark-2;
+			margin-bottom: 15px;
+			width: 70%;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		}
+
+		&__label {
+			margin-bottom: 10px;
+		}
+
+		&__input {
+			border: none;
+			outline: none;
+			background: transparent;
+			width: 90%;
+		    padding: 5px 10px;
+		    font-size: 18px;
+		    color: $color-grey-dark-1;
+		    text-align: center;
+		}
+
+		&__line {
+			width: 0;
+		    display: block;
+		    position: absolute;
+		    left: 50%;
+		    transform: translateX(-50%);
+		    height: 2px;
+		    background: $color-primary;
+		    bottom: -2px;
+		    transition: .8s;
+		}
+
+		&__input:focus + .subscribe__line,
+		&__input:valid + .subscribe__line  {
+			width: 100%;
+		}
+
+		@include screen-bg {
+			padding: 20px;
+		}
+	}
+
+	.footer-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	    height: 100%;
+
+		&__list {
+			display: flex;
+			list-style-type: none;
+
+			@include screen-bg {
+				margin-bottom: 10px;
+			}
+		}
+
+		&__item {
+			margin-right: 5px;
+		}
+
+		&__link {
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 35px;
+			background: $color-grey-dark-4;
+			color: $color-white;
+			text-decoration: none;
+			font-size: 16px;
+			transition: .4s;
+
+			&:hover {
+				background: $color-primary;
+			}
+		}
+
+		&__copy {
+			font-weight: 600;
+	    	text-transform: uppercase;
+			color: $color-white;
+		}
+
+		@include screen-bg {
+			align-items: center;
+		}
+	}
+}
+

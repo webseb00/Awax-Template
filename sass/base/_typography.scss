@@ -1,0 +1,61 @@
+.heading--first {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 90%;
+    color: $color-white;
+    text-transform: uppercase;
+
+    @include screen-sm {
+    	font-size: 40px;
+    	line-height: 100%;
+    }
+}
+
+.heading--fourth {
+	font-size: 16px;
+	font-weight: 900;
+	color: $color-white;
+	text-transform: uppercase;
+}
+
+.heading--five {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.heading--six {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.colored {
+    color: $color-primary;
+}
+
+// SECTIONS HEADING
+
+.section-wrapper {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.section-heading,
+.section-subheading {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.section-heading {
+	font-size: 32px;
+	color: $color-black;
+	margin-bottom: 5px;
+}
+
+.section-subheading {
+	font-size: 16px;
+	font-weight: 700;
+	color: $color-grey-dark-2;
+}
