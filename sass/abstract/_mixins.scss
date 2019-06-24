@@ -1,7 +1,7 @@
 // MEDIA QUERIES MIXINS:
 
 @mixin screen-xs {
-	@media (min-width: #{$screen-xs}) { @content; }
+	@media (max-width: #{$screen-xs}) { @content; }
 }
 
 @mixin screen-sm {

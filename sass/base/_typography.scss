@@ -5,12 +5,12 @@
     color: $color-white;
     text-transform: uppercase;
 
-    @include screen-sm {
+	@include screen-sm {
     	font-size: 40px;
     	line-height: 100%;
     }
-
-    @include screen-xs {
+    
+	@include screen-xs {
     	font-size: 32px;
     }
 }
