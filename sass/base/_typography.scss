@@ -9,6 +9,10 @@
     	font-size: 40px;
     	line-height: 100%;
     }
+
+    @include screen-xs {
+    	font-size: 32px;
+    }
 }
 
 .heading--fourth {
